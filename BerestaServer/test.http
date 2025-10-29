@@ -1,0 +1,6 @@
+﻿POST http://localhost:5000/api/Run
+Content-Type: application/json
+
+{
+  "code" : "console_print(\"Hello from API!\");"
+}
