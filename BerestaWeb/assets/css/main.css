@@ -1,0 +1,103 @@
+﻿html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1e1e1e;
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    color: #dcdcdc;
+}
+
+.ide-root
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.ide-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2d2d30;
+    border-bottom: 1px solid #3c3c3c;
+    padding: 8px 16px;
+}
+
+.ide-header h1
+{
+    font-size: 18px;
+    color: #9cdcfe;
+    margin: 0;
+}
+
+.run-btn
+{
+    background: #0e639c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.run-btn:hover
+{
+    background: #1177bb;
+}
+
+.ide-body
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.editor-section
+{
+    flex: 2;
+    display: flex;
+}
+.code-editor
+{
+    flex: 1;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+.console-section
+{
+    flex: 1;
+    background: #111;
+    border-top: 1px solid #333;
+    overflow-y: auto;
+}
+
+.console
+{
+    margin: 0;
+    padding: 10px;
+    font-size: 13px;
+    white-space: pre-wrap;
+}
+
+.console-line.success
+{
+    color: #6cc24a;
+}
+
+.console-line.error
+{
+    color: #f44747;
+}

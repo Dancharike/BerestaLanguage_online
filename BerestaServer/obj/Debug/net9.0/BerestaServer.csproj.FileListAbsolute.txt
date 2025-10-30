@@ -31,3 +31,4 @@ A:\Programming\Projects\RiderProjects\BerestaLanguage_online\BerestaServer\obj\D
 A:\Programming\Projects\RiderProjects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\staticwebassets.development.json
 A:\Programming\Projects\RiderProjects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\staticwebassets.build.endpoints.json
 A:\Programming\Projects\RiderProjects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaS.7F3203A7.Up2Date
+A:\Programming\Projects\RiderProjects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.sourcelink.json

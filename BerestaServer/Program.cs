@@ -2,14 +2,24 @@
 
 class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowFrontend", policy =>
+            {
+                policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
+            });
+        });
+        
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         
         var app = builder.Build();
+        app.UseCors("AllowFrontend");
         app.UseSwagger();
         app.UseSwaggerUI(options => 
         {

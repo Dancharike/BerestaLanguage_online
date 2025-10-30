@@ -17,7 +17,7 @@ public class RunController : ControllerBase
     [HttpPost]
     public IActionResult Execute([FromBody] RunRequest request)
     {
-        if(string.IsNullOrWhiteSpace(request.code)) { return BadRequest(new { error = "Code cannot be empty!" }); }
+        if(string.IsNullOrWhiteSpace(request.code)) {return BadRequest(new {error = "Code cannot be empty!"});}
 
         try
         {
@@ -27,7 +27,7 @@ public class RunController : ControllerBase
             IntPtr ptr = RunScript(request.code);
             string json = Marshal.PtrToStringAnsi(ptr) ?? "{}";
 
-            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var options = new JsonSerializerOptions {PropertyNameCaseInsensitive = true};
             var result = JsonSerializer.Deserialize<RunResult>(json, options);
 
             return Ok(result ?? new RunResult("", "Invalid response format", false));
