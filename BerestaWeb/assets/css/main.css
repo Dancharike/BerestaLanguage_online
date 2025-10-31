@@ -82,13 +82,23 @@
     min-height: 0;
     background: #1e1e1e;
     border-bottom: 1px solid #333;
+    flex: 1;
+}
+
+.editor-wrapper
+{
+    position: relative;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .line-numbers
 {
     background: #252526;
     color: #858585;
-    padding: 10px 8px;
+    padding: 8px 0;
     text-align: right;
     user-select: none;
     font-size: 14px;
@@ -96,31 +106,82 @@
     border-right: 1px solid #333;
     overflow: hidden;
     line-height: 1.5;
-    width: 40px;
+    width: 46px;
     height: 100%;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .line-numbers span
 {
     display: block;
+    padding-right: 10px;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.line-numbers .active-line
+{
+    background: #333842;
+    color: #dcdcdc;
+    border-radius: 2px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.active-line-bg
+{
+    background: rgba(60, 60, 70, 0.6);
+    border-radius: 3px;
 }
 
 .code-editor
 {
     flex: 1;
+    width: 100%;
     height: 100%;
-    background: #1e1e1e;
+    background: transparent;
     color: #d4d4d4;
     border: none;
     font-size: 14px;
-    padding: 10px;
+    padding: 8px 10px;
     resize: none;
     outline: none;
     font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
     line-height: 1.5;
     box-sizing: border-box;
     overflow-y: auto;
+    overflow-x: auto;
+    white-space: pre;
+    position: relative;
+    z-index: 2;
+    caret-color: #fff;
+}
+
+.code-highlighter
+{
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 8px 10px;
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: transparent;
+    background: transparent;
+    pointer-events: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    white-space: pre;
+    z-index: 1;
+}
+
+.code-highlighter span
+{
+    display: block;
+    height: 1.5em;
 }
 
 .console-section
