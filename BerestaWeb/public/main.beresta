@@ -1,0 +1,31 @@
+﻿console_print("Hello from BerestaLanguage!");
+
+enum PlayerState
+{
+    IDLE,
+    RUNNING,
+    JUMPING,
+    FALLING,
+    ATTACKING,
+    HIT,
+    DEAD
+}
+
+obj_player = {name, health, mana};
+player = obj_player("Denis", 100, 100);
+
+let index = int_random(3);
+
+switch(index)
+{
+    case 0: console_print("Player name is: " + player.name + " and player state is: " + PlayerState.IDLE); break;
+    case 1: console_print("Player health is: " + player.health + " and player state is: " + PlayerState.RUNNING); break;
+    case 2: console_print("Player mana is: " + player.mana + " and player state is: " + PlayerState.ATTACKING); break;
+    case 3: console_print("Noone is here!"); break;
+    default: console_print("This is default and there is an error!");
+}
+
+repeat(3)
+{
+    console_print("Code running is finished!");
+}

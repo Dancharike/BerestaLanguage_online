@@ -156,7 +156,7 @@
     overflow-x: auto;
     white-space: pre;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     caret-color: #fff;
 }
 
@@ -182,6 +182,35 @@
 {
     display: block;
     height: 1.5em;
+}
+
+.minimap
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: auto;
+    cursor: pointer;
+    background: #252526;
+    z-index: 2;
+    font-size: 4px;
+    line-height: 1.5;
+    white-space: pre;
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    transform-origin: top right;
+    transform: scaleY(1);
+    color: #999;
+    user-select: none;
+}
+
+.minimap pre
+{
+    margin: 0;
+    pointer-events: none;
+    user-select: none;
 }
 
 .console-section
