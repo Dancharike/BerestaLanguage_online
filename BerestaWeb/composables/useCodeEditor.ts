@@ -14,20 +14,31 @@ export function useCodeEditor()
     const minimapEl = ref<HTMLElement | null>(null);
     const lineNumbers = ref<HTMLElement | null>(null);
     const highlightEl = ref<HTMLElement | null>(null);
+    const syntaxEl = ref<HTMLElement | null>(null);
     
     function syncScroll()
     {
         const editor = codeEditor.value;
         if(!editor) {return;}
         
-        if(lineNumbers.value && codeEditor.value) {lineNumbers.value.scrollTop = codeEditor.value.scrollTop;}
+        if(lineNumbers.value && editor) {lineNumbers.value.scrollTop = editor.scrollTop;}
 
-        if(highlightEl.value && codeEditor.value) {highlightEl.value.scrollTop = codeEditor.value.scrollTop;}
-
-        if(minimapEl.value && codeEditor.value)
+        if(highlightEl.value && editor)
         {
-            const ratio = minimapEl.value.scrollHeight / codeEditor.value.scrollHeight;
-            minimapEl.value.scrollTop = codeEditor.value.scrollTop * ratio;
+            highlightEl.value.scrollTop = editor.scrollTop;
+            highlightEl.value.scrollLeft = editor.scrollLeft;
+        }
+        
+        if(syntaxEl.value && editor)
+        {
+            syntaxEl.value.scrollTop = editor.scrollTop;
+            syntaxEl.value.scrollLeft = editor.scrollLeft;
+        }
+
+        if(minimapEl.value && editor.value)
+        {
+            const ratio = minimapEl.value.scrollHeight / editor.scrollHeight;
+            minimapEl.value.scrollTop = editor.scrollTop * ratio;
         }
     }
 
@@ -35,6 +46,7 @@ export function useCodeEditor()
     {
         updateLineCount();
         updateActiveLine();
+        requestAnimationFrame(() => syncScroll());
     }
 
     function onKeyDown()
@@ -46,7 +58,14 @@ export function useCodeEditor()
         });
     }
 
-    function onKeyUp() {requestAnimationFrame(() => updateActiveLine());}
+    function onKeyUp()
+    {
+        requestAnimationFrame(() =>
+        {
+            updateActiveLine();
+            syncScroll();
+        });
+    }
 
     function onClick() {requestAnimationFrame(() => updateActiveLine());}
 
@@ -113,7 +132,7 @@ export function useCodeEditor()
     });
     
     return {
-        code, result, lineCount, activeLine, lineNumbers, highlightEl, minimapEl, codeEditor,
+        code, result, lineCount, activeLine, lineNumbers, highlightEl, minimapEl, codeEditor, syntaxEl,
         onInput, onKeyDown, onKeyUp, onClick, insertTab, onMinimapMouseDown, syncScroll, runCode
     }
 }

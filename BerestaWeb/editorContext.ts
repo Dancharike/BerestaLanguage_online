@@ -11,6 +11,7 @@ export interface EditorApi
     minimapEl: Ref<HTMLElement | null>;
     lineNumbers: Ref<HTMLElement | null>;
     highlightEl: Ref<HTMLElement | null>;
+    syntaxEl: Ref<HTMLElement | null>;
     
     onInput: () => void;
     onKeyDown: () => void;

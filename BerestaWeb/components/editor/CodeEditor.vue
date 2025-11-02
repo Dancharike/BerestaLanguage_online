@@ -10,7 +10,9 @@
     </div>
 
     <div class="editor-wrapper">
-      <div ref="highlightEl" class="code-highlighter">
+      <div ref="syntaxEl" class="syntax-highlighter" v-html="highlighted"></div>
+
+      <div ref="highlightEl" class="line-highlighter">
         <span
             v-for="(line, idx) in code.split('\n')"
             :key="idx"
@@ -43,14 +45,17 @@
 <script setup lang="ts">
 import {inject} from "vue";
 import {EditorKey} from "~/editorContext";
+import {useSyntaxHighlight} from "~/composables/useSyntaxHighlight";
 
 const editor = inject(EditorKey)!;
 
 const
 {
   code, lineCount, activeLine,
-  lineNumbers, highlightEl, minimapEl, codeEditor,
+  lineNumbers, highlightEl, minimapEl, codeEditor, syntaxEl,
   onInput, onKeyDown, onKeyUp, onClick, insertTab,
   onMinimapMouseDown, syncScroll
 } = editor;
+
+const {highlighted} = useSyntaxHighlight(code);
 </script>

@@ -160,7 +160,7 @@
     caret-color: #fff;
 }
 
-.code-highlighter
+.line-highlighter
 {
     position: absolute;
     inset: 0;
@@ -178,7 +178,7 @@
     z-index: 1;
 }
 
-.code-highlighter span
+.line-highlighter span
 {
     display: block;
     height: 1.5em;
@@ -239,3 +239,31 @@
 {
     color: #f44747;
 }
+
+.syntax-highlighter
+{
+    position: absolute;
+    inset: 0;
+    padding: 8px 10px;
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre;
+    color: inherit;
+    pointer-events: none;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.syntax-highlighter span
+{
+    z-index: 0;
+    color: #dcdcdc;
+}
+
+.syntax-highlighter .token-keyword {color: #c792ea;}
+.syntax-highlighter .token-number  {color: #f78c6c;}
+.syntax-highlighter .token-string  {color: #ecc48d;}
+.syntax-highlighter .token-comment {color: #6a9955;}
+.syntax-highlighter .token-builtin {color: #82aaff;}
