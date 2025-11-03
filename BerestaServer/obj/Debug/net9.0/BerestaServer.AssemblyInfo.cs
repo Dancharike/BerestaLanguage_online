@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BerestaServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca5004e2b3c53f565c2827d6265c2b77b88c37c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0201e8f875a9d4aede5514daf90aeab90ccc0fb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BerestaServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BerestaServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

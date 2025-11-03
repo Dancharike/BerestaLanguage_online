@@ -51,11 +51,11 @@ const editor = inject(EditorKey)!;
 
 const
 {
-  code, lineCount, activeLine,
+  code, selectedWord, lineCount, activeLine,
   lineNumbers, highlightEl, minimapEl, codeEditor, syntaxEl,
   onInput, onKeyDown, onKeyUp, onClick, insertTab,
   onMinimapMouseDown, syncScroll
 } = editor;
 
-const {highlighted} = useSyntaxHighlight(code);
+const {highlighted} = useSyntaxHighlight(code, selectedWord);
 </script>

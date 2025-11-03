@@ -266,3 +266,9 @@
 .syntax-highlighter .token-string  {color: #ecc48d;}
 .syntax-highlighter .token-comment {color: #6a9955;}
 .syntax-highlighter .token-builtin {color: #82aaff;}
+
+.syntax-highlighter .token-highlight
+{
+    background: rgba(41, 124, 160, 0.3);
+    border-radius: 2px;
+}
