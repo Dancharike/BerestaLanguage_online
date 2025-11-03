@@ -252,8 +252,7 @@
     color: inherit;
     pointer-events: none;
     z-index: 3;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .syntax-highlighter span

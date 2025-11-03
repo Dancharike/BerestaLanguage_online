@@ -31,8 +31,7 @@ export function useCodeEditor()
         
         if(syntaxEl.value && editor)
         {
-            syntaxEl.value.scrollTop = editor.scrollTop;
-            syntaxEl.value.scrollLeft = editor.scrollLeft;
+            syntaxEl.value.style.transform = `translateY(-${editor.scrollTop}px)`;
         }
 
         if(minimapEl.value && editor.value)
