@@ -32,7 +32,7 @@ export function useCodeEditor()
         
         if(syntaxEl.value && editor)
         {
-            syntaxEl.value.style.transform = `translateY(-${editor.scrollTop}px)`;
+            syntaxEl.value.style.transform = `translate(${-editor.scrollLeft}px, ${-editor.scrollTop}px)`;
         }
 
         if(minimapEl.value && editor.value)

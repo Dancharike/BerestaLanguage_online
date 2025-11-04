@@ -92,6 +92,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    background: #1e1e1e;
+    isolation: isolate;
 }
 
 .line-numbers
@@ -305,16 +307,19 @@
 .syntax-highlighter
 {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
     padding: 8px 10px;
     font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
     font-size: 14px;
     line-height: 1.5;
     white-space: pre;
-    color: inherit;
+    color: #dcdcdc;
     pointer-events: none;
-    z-index: 3;
-    overflow: hidden;
+    z-index: 4;
+    overflow: visible;
 }
 
 .syntax-highlighter span

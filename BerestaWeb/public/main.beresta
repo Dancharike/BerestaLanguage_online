@@ -29,3 +29,8 @@ repeat(3)
 {
     console_print("Code running is finished!");
 }
+
+for(let i = 0; i < 3; i = i + 1)
+{
+    console_print("For-loop!");
+}
