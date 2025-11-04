@@ -68,8 +68,8 @@
 
 .ide-body
 {
-    display: grid;
-    grid-template-rows: 1fr 25%;
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - 48px);
     overflow: hidden;
     min-height: 0;
@@ -227,17 +227,79 @@
 {
     margin: 0;
     font-size: 13px;
-    white-space: pre-wrap;
+    line-height: 1.2;
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+    white-space: normal;
 }
 
 .console-line.success
 {
     color: #6cc24a;
+    margin: 2px 0
 }
 
 .console-line.error
 {
     color: #f44747;
+    margin: 2px 0
+}
+
+.console-bar
+{
+    height: 32px;
+    background: #252526;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #222;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-right: 32px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.console-wrapper
+{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background: #111;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+    transition: height 0.25s ease, opacity 0.25s ease;
+}
+
+.console-toggle
+{
+    background: none;
+    border: none;
+    color: #9cdcfe;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.console-toggle:hover
+{
+    opacity: 1;
+    color: #c5e4ff;
+}
+
+.console-slide-enter-active,
+.console-slide-leave-active
+{
+    transition: all 0.25s ease;
+}
+.console-slide-enter-from,
+.console-slide-leave-to
+{
+    opacity: 0;
+    transform: translateY(10px);
+    height: 0;
 }
 
 .syntax-highlighter
