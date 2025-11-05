@@ -5,9 +5,14 @@
 
   <header class="ide-header1">
     <button @click="emit('run')" class="run-btn">▶ Run</button>
+    <button @click="emit('toggleDocs')" class="docs-button">📘</button>
   </header>
 </template>
 
 <script setup lang="ts">
-const emit = defineEmits<{(e: "run"): void}>();
+const emit = defineEmits<
+{
+  (e: "run"): void;
+  (e: "toggleDocs"): void;
+}>();
 </script>

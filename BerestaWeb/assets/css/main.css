@@ -66,6 +66,189 @@
     background: #1177bb;
 }
 
+.docs-button
+{
+    margin-left: auto;
+    background: #3a3d41;
+    color: #9cdcfe;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.docs-button:hover
+{
+    background: #45494e;
+    color: #c5e4ff;
+}
+
+.docs-backdrop
+{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.docs-window
+{
+    width: 90%;
+    height: 85%;
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+header
+{
+    background: #252526;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #dcdcdc;
+    font-family: "JetBrains Mono", monospace;
+    border-bottom: 1px solid #333;
+}
+
+.docs-controls
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select
+{
+    background: #2d2d2d;
+    border: 1px solid #444;
+    color: #ccc;
+    font-size: 13px;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.close-btn
+{
+    background: #3a3a3a;
+    color: #eee;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.close-btn:hover
+{
+    background: #007acc;
+    color: #fff;
+}
+
+.docs-body
+{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.docs-sidebar
+{
+    width: 280px;
+    background: #252526;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+    padding: 10px 14px;
+}
+
+.docs-sidebar h3
+{
+    font-size: 13px;
+    color: #9cdcfe;
+    margin: 12px 0 6px;
+}
+
+.docs-sidebar ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.docs-sidebar li
+{
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ccc;
+    border-radius: 4px;
+}
+
+.docs-sidebar li:hover
+{
+    background: #333;
+}
+
+.docs-sidebar li.active
+{
+    background: #007acc;
+    color: #fff;
+}
+
+.docs-content
+{
+    flex: 1;
+    background: #1e1e1e;
+    padding: 20px 30px;
+    color: #d4d4d4;
+    overflow-y: auto;
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1.6;
+}
+
+.docs-content h1,
+.docs-content h2,
+.docs-content h3
+{
+    color: #9cdcfe;
+}
+
+.docs-content code
+{
+    background: #2d2d2d;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.docs-content pre
+{
+    background: #2d2d2d;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 12px 0;
+}
+
+.docs-content pre code
+{
+    background: none;
+    padding: 0;
+    color: #dcdcdc;
+}
+
 .ide-body
 {
     display: flex;

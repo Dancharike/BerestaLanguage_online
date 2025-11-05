@@ -138,7 +138,7 @@ export function useCodeEditor()
 
     onMounted(async () =>
     {
-        code.value = await loadFile("/main.beresta");
+        code.value = await loadFile("/files/main.beresta");
 
         await nextTick();
 

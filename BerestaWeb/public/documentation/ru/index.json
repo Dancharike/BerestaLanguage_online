@@ -1,0 +1,49 @@
+﻿{
+  "basics": {
+    "title": "Основы языка",
+    "files": [
+      {"title": "Вступление",            "path": "documentation/ru/basics/intro.md"},
+      {"title": "Переменные",            "path": "documentation/ru/basics/variables.md"},
+      {"title": "Операторы и выражения", "path": "documentation/ru/basics/operators.md"}
+    ]
+  },
+  "control_flow": {
+    "title": "Поток контроля",
+    "files": [
+      {"title": "If / Else",    "path": "documentation/ru/control_flow/if_else.md"},
+      {"title": "While цикл",   "path": "documentation/ru/control_flow/while_loop.md"},
+      {"title": "Repeat цикл",  "path": "documentation/ru/control_flow/repeat_loop.md"},
+      {"title": "For цикл",     "path": "documentation/ru/control_flow/for_loop.md"},
+      {"title": "Foreach цикл", "path": "documentation/ru/control_flow/foreach_loop.md"},
+      {"title": "Switch",       "path": "documentation/ru/control_flow/switch.md"}
+    ]
+  },
+  "functions": {
+    "title": "Встроенные функции",
+    "files": [
+      {"title": "Синтакс функций",    "path": "documentation/ru/functions/functions.md"},
+      {"title": "Рекурсия",           "path": "documentation/ru/functions/recursion.md"},
+      {"title": "Вывод консоли",      "path": "documentation/ru/functions/console_print.md"},
+      {"title": "Базовая Математика", "path": "documentation/ru/functions/math_core_functions.md"},
+      {"title": "Тригонометрия",      "path": "documentation/ru/functions/math_trig_functions.md"},
+      {"title": "Случайности",        "path": "documentation/ru/functions/random_functions.md"},
+      {"title": "Матрицы",            "path": "documentation/ru/functions/matrix_functions.md"},
+      {"title": "Массивы",            "path": "documentation/ru/functions/array_functions.md"}
+    ]
+  },
+  "types_and_data": {
+    "title": "Типы и данные",
+    "files": [
+      {"title": "Массивы",                        "path": "documentation/ru/types_and_data/arrays.md"},
+      {"title": "Нумераторы",                     "path": "documentation/ru/types_and_data/enums.md"},
+      {"title": "Структуры (Базовая реализация)", "path": "documentation/ru/types_and_data/structs.md"},
+      {"title": "Булевые флаги",                  "path": "documentation/ru/types_and_data/flags.md"}
+    ]
+  },
+  "macros": {
+    "title": "Постоянные",
+    "files": [
+      {"title": "Встроенные постоянные", "path": "documentation/ru/macros/constants.md"}
+    ]
+  }
+}

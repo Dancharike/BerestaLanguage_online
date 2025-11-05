@@ -1,0 +1,49 @@
+﻿{
+  "basics": {
+    "title": "Language Basics",
+    "files": [
+      {"title": "Introduction",              "path": "documentation/en/basics/intro.md"},
+      {"title": "Variables",                 "path": "documentation/en/basics/variables.md"},
+      {"title": "Operators and Expressions", "path": "documentation/en/basics/operators.md"}
+    ]
+  },
+  "control_flow": {
+    "title": "Control Flow",
+    "files": [
+      {"title": "If / Else",    "path": "documentation/en/control_flow/if_else.md"},
+      {"title": "While Loop",   "path": "documentation/en/control_flow/while_loop.md"},
+      {"title": "Repeat Loop",  "path": "documentation/en/control_flow/repeat_loop.md"},
+      {"title": "For Loop",     "path": "documentation/en/control_flow/for_loop.md"},
+      {"title": "Foreach Loop", "path": "documentation/en/control_flow/foreach_loop.md"},
+      {"title": "Switch",       "path": "documentation/en/control_flow/switch.md"}
+    ]
+  },
+  "functions": {
+    "title": "Functions and Built-ins",
+    "files": [
+      {"title": "Function Syntax",             "path": "documentation/en/functions/functions.md"},
+      {"title": "Recursion",                   "path": "documentation/en/functions/recursion.md"},
+      {"title": "Console Output",              "path": "documentation/en/functions/console_print.md"},
+      {"title": "Math Core Functions",         "path": "documentation/en/functions/math_core_functions.md"},
+      {"title": "Math Trigonometry Functions", "path": "documentation/en/functions/math_trig_functions.md"},
+      {"title": "Random Functions",            "path": "documentation/en/functions/random_functions.md"},
+      {"title": "Matrix Functions",            "path": "documentation/en/functions/matrix_functions.md"},
+      {"title": "Array Functions",             "path": "documentation/en/functions/array_functions.md"}
+    ]
+  },
+  "types_and_data": {
+    "title": "Types and Data",
+    "files": [
+      {"title": "Arrays",             "path": "documentation/en/types_and_data/arrays.md"},
+      {"title": "Enums",              "path": "documentation/en/types_and_data/enums.md"},
+      {"title": "Structs (Basic)",    "path": "documentation/en/types_and_data/structs.md"},
+      {"title": "Flags and Booleans", "path": "documentation/en/types_and_data/flags.md"}
+    ]
+  },
+  "macros": {
+    "title": "Macros and Constants",
+    "files": [
+      {"title": "Built-in Constants", "path": "documentation/en/macros/constants.md"}
+    ]
+  }
+}

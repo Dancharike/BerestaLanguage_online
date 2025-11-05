@@ -1,0 +1,493 @@
+// базовая математика
+    
+    a = 10;
+    b = 20;
+
+    c = (a + b) / -2;
+
+// условия if()
+    
+    if(a < b and b > a)
+    {
+        c = 1;
+        console_print(c);
+    }
+    else
+    {
+        c = 0;
+        console_print(c);
+    }
+
+    if(a > b or b < a)
+    {
+        c = 1;
+        console_print(c);
+    }
+    else
+    {
+        c = 0;
+        console_print(c);
+    }
+
+    if(a < b)
+    {
+        c = a + b;
+        console_print(c);
+    }
+
+    x = 5;
+    y = 10;
+
+    if(x > y)
+    {
+        console_print(x);
+    }
+    else if(x < y)
+    {
+        z = x + y;
+        console_print(z);
+    }
+
+// условие while()
+    
+    i = 0;
+    while(i < 5)
+    {
+        console_print(i);
+        i = i + 1;
+    }
+
+    let counter = 0;
+    while(counter < 10)
+    {
+        counter = counter + 1;
+
+        if(counter == 3)
+        {
+            console_print("skip 3");
+            continue;
+        }
+
+        if(counter == 8)
+        {
+            console_print("stop at 8");
+            break;
+        }
+
+        console_print(counter);
+    }
+    console_print("while done");
+
+// условие repeat()
+    
+    i = 0;
+    repeat(5)
+    {
+        console_print(int_random_range(1, 10));
+        i = i + 1;
+    }
+
+    let random_check = 0;
+    repeat(10)
+    {
+        let n = int_random_range(1, 10);
+        console_print("num: " + n);
+
+        if(n == 7)
+        {
+            console_print("found 7, stop");
+            break;
+        }
+
+        if(n == 8)
+        {
+            console_print("found 8, stop");
+            break;
+        }
+
+        random_check = random_check + 1;
+    }
+    console_print("repeat done, total iterations: " + random_check);
+
+// условие for()
+    
+    for(let i = 0; i < 3; i = i + 1)
+    {
+        console_print(3);
+    }
+
+    for(let j = 0; j < 10; j = j + 1)
+    {
+        if(j % 2 == 0) {continue;}
+        if(j == 7)     {break;}
+        console_print("odd: " + j);
+    }
+    console_print("for done");
+
+// вызов и работа с функциями
+    
+    c = 1;
+    console_print(c + 5);
+
+    // базовая игровая математика
+    console_print(sqr(9));
+    console_print(sqrt(9), sqrt(16 + 9));
+    console_print(frac(3.14));
+    console_print(mean(1, 2, 3, 4));
+    console_print(median(1, 9, 3, 7));
+    console_print(power(2, 10));
+    console_print(ln(25));
+    console_print(log2(1024));
+    console_print(log10(10000));
+    console_print(logn(5, 25));
+    console_print(clamp(17, 0, 10));
+    console_print(lerp(0.0, 100.0, 0.3));
+    console_print(choose_from(10, 20, 30, 40));
+    console_print(random(1));
+    console_print(random_range(0, 10));
+    console_print(int_random(5));
+    console_print(int_random_range(5, 15));
+
+    // тригонометрия
+    console_print(sin(3.14159 / 2));
+    console_print(cos(0));
+    console_print(tan(3.14159));
+    console_print(arcsin(0));
+    console_print(arccos(0));
+    console_print(arctan(0));
+    console_print(arctan2(1, 1));
+    console_print(dsin(90));
+    console_print(dcos(45));
+    console_print(dtan(45)); // 90 и 270 будут выдавать ошибку, ибо уходят к бесконечности
+    console_print(darcsin(-1));
+    console_print(darccos(-1));
+    console_print(darctan(1));
+    console_print(darctan2(1, 1));
+    console_print(point_direction(0, 0, 1, 0));
+    console_print(point_distance(0, 0, 3, 4));
+    console_print(lengthdir_x(64, 90));
+    console_print(lengthdir_y(64, 90));
+
+    // матрицы
+    matrix_set(1, 0, 0, 1, 10, 20);
+    console_print(matrix_get());
+
+    matrix_build(1, 1, 45, 100, 200);
+    console_print(matrix_get());
+
+    matrix_identity();
+    console_print(matrix_get());
+
+    matrix_build(1, 1, 45, 100, 200);
+    matrix_multiply(1, 0, 0, 1, 10, 10);
+    console_print(matrix_get());
+
+    matrix_build(1, 1, 45, 100, 200);
+    matrix_inverse();
+    console_print(matrix_get());
+
+    matrix_build(2, 2, 0, 100, 100);
+    console_print(matrix_transform_vertex(10, 10));
+
+// обработка пользовательских функций
+    
+    public function add(a, b)
+    {
+        return a + b;
+    }
+
+    let answer = add(2, 3);
+    console_print(answer);
+
+// рабочая рекурсия в функциях
+    
+    public function fact(n)
+    {
+        if(n <= 1) {return 1;}
+        return n * fact(n - 1);
+    }
+
+    let answer = fact(5);
+
+    console_print(answer);
+
+// работающий вызов публичных функций из других файлов в папке проекта, смотреть calculations.beresta
+    
+    let answer = calculate(5, 10, 2);
+    console_print(answer);
+
+// функции теперь могут быть без возврата, тогда просто в консоли будет это отображено
+// к этому добавил обработку строк, как новый динамический тип
+    
+    private function greet(name)
+    {
+        console_print("Hello " + name);
+    }
+
+    let x = greet("Denis");
+    //console_print(x);
+
+// обработка флагов добавлена
+    
+    is_flag = true;
+
+    if(int_random(1) == 0) {is_flag = !is_flag;}
+    else {is_flag = is_flag;}
+
+    if(!is_flag) {console_print("No Hello!");}
+    else {console_print("Yes hello this time!");}
+
+// работа с массивами
+    
+    let a = [1, "hi", true, [10, 20]];
+
+    // умеет в базовый доступ по индексу
+    console_print(a[0]);
+    console_print(a[1]);
+    console_print(a[2]);
+    console_print(a[3]);
+    console_print(a[3][1]); // вложенные массивы
+    console_print(a[1.9]); // double приводится к int (из 1.9 в 1)
+
+    a[1] = "hello"; // присутствует присваивание
+    a[3][0] = 42; // можно поменять элементы вложенных массивов
+    a[5] = 777; // можно расширить границы массива к большему кол-ву элементов
+    a[4][2] = 9; // создание нового элемента и вложение в него нового массива с индексом 2
+
+    console_print(a);
+
+    // можно создать массив и вложить в него ещё несколько, что автоматически расширит его
+    let b = [];
+    b[2][1][0] = "x";
+    console_print(b);
+
+    // базовый пример функции с массивом
+    public function make_arr()
+    {
+        return [5, 6, 7];
+    }
+    console_print(make_arr()[1]);
+
+    // есть возможность заполнять массив в циклах
+    let c = [];
+    for(let k = 0; k < 3; k = k + 1)
+    {
+        c[k] = k * 10;
+    }
+    console_print(c);
+
+    c[5] = 50; // авто-расширение
+    console_print(c);
+
+    // посчитает сумму первых трёх элементов циклом
+    let sum = 0;
+    let j = 0;
+    while(j < 3)
+    {
+        sum = sum + c[j];
+        j = j + 1;
+    }
+    console_print(sum);
+
+// функции массивов
+    
+    let a = [1, 2, 3];
+    console_print(array_length(a));
+
+    a = array_set(a, 5, "x");
+    console_print(a);
+
+    a = array_push(a, 999);
+    console_print(array_last(a));
+
+    a = array_pop(a);
+    console_print(array_last(a));
+
+    a = array_insert(a, 1, "hello");
+    console_print(a);
+
+    a = array_delete(a, 2);
+    console_print(a);
+
+    console_print(array_index_of(a, "hello"));
+    console_print(array_contains(a, 777));
+    console_print(array_concat(a, [7,8]));
+    console_print(array_slice(a, 1, 3));
+    console_print(array_reverse([7,8]));
+    console_print(array_join([1,2,3], "; "));
+    console_print(array_resize([1], 4, 0));
+    console_print(array_fill(3, "Q"));
+
+    let z = [3, "b", 2, "a", false, [1], [1,2], 2.5, true];
+    console_print(array_sort(z));
+    console_print(array_sort(z, false));
+
+    let nums = [10, 2, 2.5, -3, 0];
+    console_print(array_sort(nums));
+
+    let strs = ["b", "aa", "ab", "a"];
+    console_print(array_sort(strs));
+
+    let deep = [[1,2], [1], [1,2,0], [1,1]];
+    console_print(array_sort(deep));
+
+    console_print(array_shuffle(nums));
+
+// добавлен enum
+    
+    enum PlayerState
+    {
+        Idle,
+        Attack = 5,
+        Jump,
+    }
+
+    console_print(PlayerState.Idle);
+    console_print(PlayerState.Attack);
+    console_print(PlayerState.Jump);
+
+// добавлен foreach для удобства
+    // базовый вывод всех элементов массива
+    
+    let arr = [10, 20, 30, "string", [5, 15, 25], false];
+    foreach(x in arr)
+    {
+        console_print(x);
+    }
+
+    // вывод всех элементов матрицы
+    let matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+
+    foreach(row in matrix)
+    {
+        foreach(val in row)
+        {
+            console_print(val);
+        }
+    }
+
+    // подсчёт суммы элементом массива
+    function sum(arr)
+    {
+        let total = 0;
+        foreach(x in arr)
+        {
+            total = total + x;
+        }
+
+        return total;
+    }
+
+    console_print(sum([10, 20, 30, 40]));
+
+    // проверка с условием и вывод
+    foreach(n in [5, 10, 15, 20])
+    {
+        if(n > 10) {console_print(n);}
+    }
+
+    let nested_matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ];
+
+    foreach(row in nested_matrix)
+    {
+        foreach(val in row)
+        {
+            if(val == 5)
+            {
+                console_print("skip 5");
+                continue;
+            }
+
+            if(val == 8)
+            {
+                console_print("stop inner at 8");
+                break;
+            }
+
+            console_print(val);
+        }
+
+        if(row[0] == 7)
+        {
+            console_print("stop outer");
+            break;
+        }
+    }
+    console_print("foreach done");
+
+    function sum_positive(values)
+    {
+        let total = 0;
+
+        foreach(v in values)
+        {
+            if(v < 0)
+            {
+                console_print("skip negative: " + v);
+                continue;
+            }
+
+            total = total + v;
+        }
+
+        return total;
+    }
+
+    console_print("sum of positives: " + sum_positive([-10, 20, -5, 15, 30]));
+
+// структура
+    
+    player_01 = obj_player("Denis", 100, 100, 30);
+
+    console_print(player_01);
+    console_print(player_01.name + " penis length is: " + player_01.penis_length + " cm!");
+    // только хранение данных, на данный момент не решился реализовывать хранение методов в структуре и наследование других структур
+
+// добавлены макросы, что можно вызывать из любого файла
+    
+    console_print("App version is: " + VERSION);
+    console_print("Pi value is: " + PI);
+
+// добавлен переключатель
+    
+    function hero_action(action)
+    {
+        switch(action)
+        {
+            case "attack":
+                console_print(HERO_NAME + " swings the sword fiercely!");
+                break;
+
+            case "heal":
+                console_print(HERO_NAME + " drinks a potion and recovers 20 HP.");
+                break;
+
+            case "sleep":
+                console_print(HERO_NAME + " rests by the campfire... Zzz...");
+                break;
+
+            case "talk":
+                console_print(HERO_NAME + ": 'It's dangerous to go alone.'");
+                break;
+
+            default:
+                console_print(HERO_NAME + " is confused. Nothing happens.");
+        }
+    }
+
+    let actions = ["attack", "heal", "sleep", "talk", "dance"];
+    foreach(act in actions)
+    {
+        console_print("Player chooses: " + act);
+        hero_action(act);
+    }
+
+    console_print("switch demo done!");
