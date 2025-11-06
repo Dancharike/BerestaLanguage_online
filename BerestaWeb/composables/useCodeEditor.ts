@@ -1,7 +1,7 @@
-﻿import {ref, onMounted, nextTick} from "vue"
-import {useBerestaApi} from "./useBerestaApi"
-import {loadFile} from "~/services/fileLoader"
-import {useMinimap} from "./useMinimap"
+﻿import {ref, onMounted, nextTick} from "vue";
+import {useBerestaApi} from "./useBerestaApi";
+import {loadFile} from "~/services/fileLoader";
+import {useMinimap} from "./useMinimap";
 
 export function useCodeEditor()
 {

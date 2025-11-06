@@ -22,7 +22,7 @@
                   v-for="file in category.files"
                   :key="file.path"
                   @click="loadFile(file.path)"
-                  :class="{ active: current_path === file.path }"
+                  :class="{active: current_path === file.path}"
               >
                 {{file.title}}
               </li>
@@ -30,52 +30,26 @@
           </template>
         </aside>
 
-        <main class="docs-content" v-html="html"></main>
+        <main ref="contentRef" class="docs-content" v-html="html"></main>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted} from "vue";
-import {marked} from "marked";
+import {onMounted, ref} from "vue";
+import {useDocumentation} from "~/composables/useDocumentation";
 
 const emit = defineEmits<{(e: "close"): void;}>();
+const {docs, html, lang, current_path, loadIndex, loadFile, attachContentElement} = useDocumentation();
+const contentRef = ref<HTMLElement | null>(null);
 
-const docs = ref<any>(null);
-const html = ref("<p>Select an article from the sidebar.</p>");
-const lang = ref("en");
-const current_path = ref<string | null>(null);
-
-async function loadIndex()
+onMounted(() =>
 {
-  try
+  if(contentRef.value)
   {
-    const res = await fetch(`/documentation/${lang.value}/index.json`);
-    docs.value = await res.json();
-    html.value = "<p>Select an article from the sidebar.</p>";
-    current_path.value = null;
+    attachContentElement(contentRef.value);
   }
-  catch(err)
-  {
-    html.value = `<p style='color:red'>Failed to load documentation index.</p>`;
-  }
-}
-
-async function loadFile(path: string)
-{
-  try
-  {
-    current_path.value = path;
-    const res = await fetch("/" + path);
-    const text = await res.text();
-    html.value = marked(text);
-  }
-  catch(err)
-  {
-    html.value = `<p style='color:red'>Failed to load file: ${path}</p>`;
-  }
-}
-
-onMounted(loadIndex);
+  loadIndex();
+});
 </script>
