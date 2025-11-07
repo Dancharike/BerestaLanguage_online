@@ -21,21 +21,21 @@
   "functions": {
     "title": "Встроенные функции",
     "files": [
-      {"title": "Синтакс функций",    "path": "documentation/ru/functions/functions.md"},
+      {"title": "Синтаксис функций",  "path": "documentation/ru/functions/functions.md"},
       {"title": "Рекурсия",           "path": "documentation/ru/functions/recursion.md"},
       {"title": "Вывод консоли",      "path": "documentation/ru/functions/console_print.md"},
       {"title": "Базовая Математика", "path": "documentation/ru/functions/math_core_functions.md"},
       {"title": "Тригонометрия",      "path": "documentation/ru/functions/math_trig_functions.md"},
       {"title": "Случайности",        "path": "documentation/ru/functions/random_functions.md"},
       {"title": "Матрицы",            "path": "documentation/ru/functions/matrix_functions.md"},
-      {"title": "Массивы",            "path": "documentation/ru/functions/array_functions.md"}
+      {"title": "Работа с массивами", "path": "documentation/ru/functions/array_functions.md"}
     ]
   },
   "types_and_data": {
     "title": "Типы и данные",
     "files": [
       {"title": "Массивы",                        "path": "documentation/ru/types_and_data/arrays.md"},
-      {"title": "Нумераторы",                     "path": "documentation/ru/types_and_data/enums.md"},
+      {"title": "Перечисления",                   "path": "documentation/ru/types_and_data/enums.md"},
       {"title": "Структуры (Базовая реализация)", "path": "documentation/ru/types_and_data/structs.md"},
       {"title": "Булевые флаги",                  "path": "documentation/ru/types_and_data/flags.md"}
     ]
