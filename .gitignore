@@ -1,0 +1,24 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+
+# Node
+**/node_modules/
+**/dist/
+**/.nuxt/
+**/.output/
+**/.cache/
+
+# IDE
+.vs/
+.vscode/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

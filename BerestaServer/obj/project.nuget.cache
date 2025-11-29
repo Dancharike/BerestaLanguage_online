@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eaYowntap4o=",
+  "dgSpecHash": "l9pzGHWr5M0=",
   "success": true,
-  "projectFilePath": "A:\\Programming\\Projects\\RiderProjects\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj",
+  "projectFilePath": "C:\\Users\\Denis\\Downloads\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0-preview.3.24172.13\\microsoft.aspnetcore.openapi.9.0.0-preview.3.24172.13.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

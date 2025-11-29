@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Programming\\Projects\\RiderProjects\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj": {}
+    "C:\\Users\\Denis\\Downloads\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj": {}
   },
   "projects": {
-    "A:\\Programming\\Projects\\RiderProjects\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj": {
+    "C:\\Users\\Denis\\Downloads\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Programming\\Projects\\RiderProjects\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj",
+        "projectUniqueName": "C:\\Users\\Denis\\Downloads\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj",
         "projectName": "BerestaServer",
-        "projectPath": "A:\\Programming\\Projects\\RiderProjects\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj",
+        "projectPath": "C:\\Users\\Denis\\Downloads\\BerestaLanguage_online\\BerestaServer\\BerestaServer.csproj",
         "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
-        "outputPath": "A:\\Programming\\Projects\\RiderProjects\\BerestaLanguage_online\\BerestaServer\\obj\\",
+        "outputPath": "C:\\Users\\Denis\\Downloads\\BerestaLanguage_online\\BerestaServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -36,9 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Denis\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
