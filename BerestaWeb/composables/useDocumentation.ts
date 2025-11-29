@@ -43,7 +43,7 @@ export function useDocumentation()
             
             const res = await fetch("/" + path);
             const text = await res.text();
-            html.value = marked(text);
+            html.value = await marked(text);
             
             await nextTick();
             

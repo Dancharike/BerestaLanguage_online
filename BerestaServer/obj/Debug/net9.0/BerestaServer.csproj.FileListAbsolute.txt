@@ -67,3 +67,37 @@ C:\Users\Denis\Downloads\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\r
 C:\Users\Denis\Downloads\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.pdb
 C:\Users\Denis\Downloads\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.genruntimeconfig.cache
 C:\Users\Denis\Downloads\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\ref\BerestaServer.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\BerestaServer.staticwebassets.endpoints.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\BerestaServer.exe
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\BerestaServer.deps.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\BerestaServer.runtimeconfig.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\BerestaServer.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\BerestaServer.pdb
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\Microsoft.OpenApi.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.csproj.AssemblyReference.cache
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\rpswa.dswa.cache.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.GeneratedMSBuildEditorConfig.editorconfig
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.AssemblyInfoInputs.cache
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.AssemblyInfo.cs
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.csproj.CoreCompileInputs.cache
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.MvcApplicationPartsAssemblyInfo.cs
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.MvcApplicationPartsAssemblyInfo.cache
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.sourcelink.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\rjimswa.dswa.cache.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\scopedcss\bundle\BerestaServer.styles.css
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\staticwebassets.build.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\staticwebassets.build.json.cache
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\staticwebassets.development.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaS.7F3203A7.Up2Date
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\refint\BerestaServer.dll
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.pdb
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\BerestaServer.genruntimeconfig.cache
+A:\Programming\Projects\VSC projects\BerestaLanguage_online\BerestaServer\obj\Debug\net9.0\ref\BerestaServer.dll

@@ -7,6 +7,8 @@ export interface EditorApi
     lineCount: Ref<number>;
     activeLine: Ref<number>;
     
+    selectedWord: Ref<string>;
+    
     codeEditor: Ref<HTMLElement | null>;
     minimapEl: Ref<HTMLElement | null>;
     lineNumbers: Ref<HTMLElement | null>;
@@ -18,7 +20,7 @@ export interface EditorApi
     onKeyUp: () => void;
     onClick: () => void;
     insertTab: () => void;
-    onMinimapMouseDown: () => void;
+    onMinimapMouseDown: (e: MouseEvent) => void;
     syncScroll: () => void;
     runCode: () => Promise<void>;
 }

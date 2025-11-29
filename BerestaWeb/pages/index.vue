@@ -1,6 +1,6 @@
 ﻿<template>
   <div class="ide-root">
-    <Toolbar @run="editor.runCode" @toggleDocs="show_docs = !show_docs" />
+    <ToolBar @run="editor.runCode" @toggleDocs="show_docs = !show_docs" />
     
     <main class="ide-body">
       <CodeEditor :style="{height: editor_height + 'px'}" />
@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import {provide, ref} from "vue";
-import Toolbar from "~/components/editor/Toolbar.vue";
+import ToolBar from "~/components/editor/ToolBar.vue";
 import CodeEditor from "~/components/editor/CodeEditor.vue";
 import ConsoleView from "~/components/editor/ConsoleView.vue";
 import DocumentationView from "~/components/editor/DocumentationView.vue";
